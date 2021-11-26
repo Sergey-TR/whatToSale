@@ -3,7 +3,9 @@
         <div class="dayItem" v-for="(_, i) in 7"><span class="weeklyDay">{{ weekDayName(i)}}</span></div>
       </div>
       <div class="monthDays">
-        <div class="calendarItem" v-for="i in days"><span class="monthDay">{{ i }}</span></div>
+        <div class="calendarItem" v-for="day in days">
+          <CalendarItem :date="date" :data="day" v-if="day"/>
+        </div>
       </div>
 </template>
 
@@ -11,18 +13,18 @@
 
 import dateUtils from "./composables/dateUtils";
 import weekDay from "./composables/weekDay";
+import CalendarItem from "./CalendarItem";
 
 export default {
   name: "Calendar",
+  components: {CalendarItem},
 
   props: ['date'],
   watch: {
     date: {
       immediate: true,
       handler() {
-        console.log(this.date)
         const currentDay = this.date
-        console.log(currentDay)
         const month = currentDay.getMonth()
         const year = currentDay.getFullYear()
         const daysInMonth = dateUtils(month, year)
@@ -32,6 +34,7 @@ export default {
           days[i] = i + 1 - firstDayIndex
         }
         this.days = days
+        return this.days
       }
     },
   },

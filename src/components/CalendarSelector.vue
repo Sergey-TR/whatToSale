@@ -7,15 +7,15 @@
       <div class="calendar_selector">
 
         <div class="calendar_selector_month">
-          <button class="btn btn-calendar" @click="prevMonth"><fa icon="caret-square-down" /></button>
+          <button class="btn btn-calendar" @click="prevMonth"><fas icon="caret-square-down" /></button>
           <span class="span-selector" >{{ getMonthTitle() }}</span>
-          <button class="btn btn-calendar" @click="nextMonth"><fa icon="caret-square-up" /></button>
+          <button class="btn btn-calendar" @click="nextMonth"><fas icon="caret-square-up" /></button>
         </div>
 
         <div class="calendar_selector_year">
-          <button class="btn btn-calendar" @click="prevYear"><fa icon="caret-square-down" /></button>
+          <button class="btn btn-calendar" @click="prevYear"><fas icon="caret-square-down" /></button>
           <span class="span-selector">{{ getYear() }}</span>
-          <button class="btn btn-calendar" @click="nextYear"><fa icon="caret-square-up" /></button>
+          <button class="btn btn-calendar" @click="nextYear"><fas icon="caret-square-up" /></button>
         </div>
     </div>
     <Calendar :date="date"/>

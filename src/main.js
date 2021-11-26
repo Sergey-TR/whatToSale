@@ -8,5 +8,5 @@ import { fas } from "@fortawesome/free-solid-svg-icons"
 library.add(fas)
 
 createApp(App)
-    .component('fa', FontAwesomeIcon)
+    .component('fas', FontAwesomeIcon)
     .mount('#app')
