@@ -7,13 +7,12 @@
 
 <script>
 import Nav from "./Nav";
-import CalendarSelector from "./CalendarSelector";
+import CalendarSelector from "./calendar/CalendarSelector";
 
 export default {
   name: "MainWrapper",
   components: {CalendarSelector, Nav},
 }
-
 </script>
 
 <style>

@@ -109,6 +109,10 @@ a {
   align-items: center;
   justify-content: center;
 }
+.btn-plus:hover {
+  border: 2px solid #f16d7f;
+  background: #eebbc1;
+}
 .monthDay {
   margin: 10px;
   color: dimgray;
@@ -116,9 +120,9 @@ a {
 
 }
 .dayItem {
-  width: calc(100% / 8);
+  width: calc(100% / 7);
   text-align: left;
-  margin: 10px 2px;
+  margin: 10px 0px;
 }
 .primary {
   background: #f68e9b;
@@ -129,6 +133,7 @@ a {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+  cursor: pointer;
 }
 .primary:hover, .default:hover {
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.17)

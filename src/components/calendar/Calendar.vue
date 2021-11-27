@@ -11,8 +11,8 @@
 
 <script>
 
-import dateUtils from "./composables/dateUtils";
-import weekDay from "./composables/weekDay";
+import dateUtils from "../composables/dateUtils";
+import weekDay from "../composables/weekDay";
 import CalendarItem from "./CalendarItem";
 
 export default {

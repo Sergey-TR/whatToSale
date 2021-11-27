@@ -18,7 +18,7 @@
           <button class="btn btn-calendar" @click="nextYear"><fas icon="caret-square-up" /></button>
         </div>
     </div>
-    <Calendar :date="date"/>
+    <Calendar :date="date" />
     </div>
   </div>
 </template>
